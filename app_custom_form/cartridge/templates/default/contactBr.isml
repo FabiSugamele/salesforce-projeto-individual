@@ -14,24 +14,25 @@
       <div class="col-sm-8 col-md-6">
         <div class="card">
           <div class="card-body">
-            <form action="${pdict.actionUrl}" class="contactBr-form" method="POST" <isprint value="${pdict.contactForm.attributes}" encoding="off" />>
+            <form action="${pdict.actionUrl}"
+            class="contactBr-form" method="POST" <isprint value="${pdict.contactForm.attributes}" encoding="off" />>
             <div class="row">
               <div class="col-12">
                 <!-- Nome Completo -->
-                <div class="form-group ${pdict.contactForm.name.mandatory === true ? 'required' : ''}">
-                  <label class="form-control-label" for="name">
+                <div class="form-group ${pdict.contactForm.nome.mandatory === true ? 'required' : ''}">
+                  <label class="form-control-label" for="nome">
                     ${Resource.msg('nome completo', 'form', null)}
                   </label>
-                  <input type="text" class="form-control" id="name" <isprint value="${pdict.contactForm.name.attributes}" encoding="off" /> autocomplete="given-name">
+                  <input type="text" class="form-control" id="nome" <isprint value="${pdict.contactForm.nome.attributes}" encoding="off" /> autocomplete="given-name">
                   <div class="invalid-feedback"></div>
                 </div>
 
                 <!-- Telefone -->
-                <div class="form-group ${pdict.contactForm.phone.mandatory === true ? 'required' : ''}">
-                  <label class="form-control-label" for="phone">
+                <div class="form-group ${pdict.contactForm.telefone.mandatory === true ? 'required' : ''}">
+                  <label class="form-control-label" for="telefone">
                     ${Resource.msg('telefone', 'form', null)}
                   </label>
-                  <input type="tel" class="form-control" id="phone" <isprint value="${pdict.contactForm.phone.attributes}" encoding="off" /> autocomplete="tel"/>
+                  <input type="tel" class="form-control" id="telefone" <isprint value="${pdict.contactForm.telefone.attributes}" encoding="off" /> autocomplete="tel"/>
                   <div class="invalid-feedback"></div>
                 </div>
 

@@ -30,7 +30,7 @@ server.post('Subscribe', server.middleware.https, function(req, res, next) {
         //     success: true,
         //     msg: Resource.msg('success.message', 'form', null)
         // });
-        res.render('contactBr/mensagemConfirmacao', {
+        res.render('mensagemConfirmacao', {
             contactForm: contactForm
         });
     } catch (e) {
